@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+        <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>
+         C2P - ITSS
+        </title>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+        <!--     Fonts and icons     -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <!-- CSS Files -->
+        <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="./assets/css/now-ui-dashboard.css?v=1.5.0" rel="stylesheet" />
+        <!-- CSS Just for demo purpose, don't include it in your project -->
+        <link href="./assets/demo/demo.css" rel="stylesheet" />
+    </head>
+
+    <body class="">
+        <div class="main-panel">
+            <div class="panel-header panel-header-sm">
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                            <div class="places-buttons">
+                                <div class="row">
+                                    <div class="col-md-6 ml-auto mr-auto text-center">
+                                        <h4 class="card-title">
+                                        Portal de pagos del comercio
+                                        <!-- <p class="category">Click to view notifications</p> -->
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 ml-auto mr-auto">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <button class="btn btn-primary btn-block" id="adminC2P" >
+                                                    Administrador
+                                                </button>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <button class="btn btn-primary btn-block" id="operatorC2P">
+                                                    Operador
+                                                </button>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <button class="btn btn-primary btn-block" id="afiliacionC2P">
+                                                    Afiliación
+                                                </button>
+                                            </div> 
+                                            <div class="col-md-3">
+                                                <button class="btn btn-primary btn-block" id="botonC2P">
+                                                    Demo Botón de Cobro
+                                                </button>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+  <!--   Core JS Files   -->
+  <script src="./assets/js/core/jquery.min.js"></script>
+  <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap.min.js"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Chart JS -->
+  <script src="./assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="./assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="./assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script><!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+  <script src="./assets/demo/demo.js"></script>
+  <!-- Index.js para definir las rutas a seguir -->
+  <script>
+    $('#adminC2P').on('click', (e)=>{
+        location.href="https://adminc2p.itssca.net:3443"
+    })
+
+    $('#operatorC2P').on('click', (e)=>{
+        location.href="https://c2p.itssca.net:2443"
+    })
+
+    $('#afiliacionC2P').on('click', (e)=>{
+        location.href="https://afiliac2p.itssca.net:4444"
+    })
+
+    $('#botonC2P').on('click', (e)=>{
+        location.href="https://modaquiroz.itssca.net:3251"
+    })
+
+  </script>
+</html>
